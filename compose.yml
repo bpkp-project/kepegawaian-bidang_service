@@ -12,6 +12,8 @@ services:
   adminer:
       image: adminer
       restart: always
+      environment:
+        ADMINER_DEFAULT_SERVER: "sqlserver"
       ports:
           - "127.0.0.1:8083:8080"
 volumes:
